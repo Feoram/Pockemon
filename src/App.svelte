@@ -1,15 +1,11 @@
 <script>
-  import First from "./lib/routes/First.svelte";
-  import Two from "./lib/routes/Two.svelte";
-  import Three from "./lib/routes/Three.svelte";
   import Tailwind from "./Tailwind.svelte";
   import {Link, Route, Router} from "svelte-routing";
+  import Home from "./lib/routes/Home.svelte";
 </script>
 
 <Tailwind />
 
 <Router>
-    <Route path="/" component={First} />
-    <Route path="about" component={Two} />
-    <Route path="*" component={Three} />
+    <Route path="/" component={Home} />
 </Router>
